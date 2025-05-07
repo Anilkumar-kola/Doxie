@@ -1,0 +1,51 @@
+{
+    "invoice": {
+      "patterns": [
+        "invoice", "bill", "payment", "amount due", "invoice number",
+        "invoice date", "total amount", "tax", "subtotal"
+      ],
+      "description": "A document requesting payment for goods or services"
+    },
+    "receipt": {
+      "patterns": [
+        "receipt", "thank you for your purchase", "cashier",
+        "total", "change", "refund policy", "transaction"
+      ],
+      "description": "A document acknowledging payment for goods or services"
+    },
+    "contract": {
+      "patterns": [
+        "agreement", "contract", "terms", "conditions", "parties",
+        "signature", "clause", "hereby agree", "obligations"
+      ],
+      "description": "A legally binding document between parties"
+    },
+    "medical_record": {
+      "patterns": [
+        "patient", "diagnosis", "doctor", "prescription", "treatment",
+        "medical", "health", "examination", "symptoms", "history"
+      ],
+      "description": "A document containing medical information about a patient"
+    },
+    "resume": {
+      "patterns": [
+        "resume", "cv", "curriculum vitae", "experience", "education",
+        "skills", "employment", "certification", "references"
+      ],
+      "description": "A document describing a person's qualifications and experience"
+    },
+    "email": {
+      "patterns": [
+        "from:", "to:", "subject:", "sent:", "cc:", "bcc:",
+        "forwarded", "replied", "original message"
+      ],
+      "description": "An electronic message exchanged between users"
+    },
+    "letter": {
+      "patterns": [
+        "dear", "sincerely", "regards", "to whom it may concern",
+        "yours truly", "addressed", "date:"
+      ],
+      "description": "A written communication sent to a person or organization"
+    }
+  }

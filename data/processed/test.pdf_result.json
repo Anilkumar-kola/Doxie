@@ -1,0 +1,65 @@
+{
+  "file_path": "data\\inbox\\test.pdf",
+  "file_size": 381709,
+  "file_type": ".pdf",
+  "content": "CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main\nMusterkunde AG\nMr. John Doe\nMusterstr. 23\n12345 Musterstadt\nName:  Stefanie M\u00fcller\nPhone: +49 9371 9786-0\nInvoice WMACCESS Internet\nVAT No. DE199378386\nInvoice No\n123100401\nAmount\n-without VAT-\nquantity\n130,00 \u20ac\n1\n10,00 \u20ac\n0\n50,00 \u20ac\n0\n1.000,00 \u20ac\n0\n10,00 \u20ac\n0\n0,58 \u20ac\n14\n0,70 \u20ac\n0\n1,50 \u20ac\n162\n0,50 \u20ac\n0\n0,80 \u20ac\n0\n1,80 \u20ac\n0\n0,30 \u20ac\n0\n0,30 \u20ac\n0\n0,40 \u20ac\n0\n0,40 \u20ac\n0\n0,30 \u20ac\n0\n0,30 \u20ac\n0\nTerms of Payment: Immediate payment without discount. Any bank charges must be paid by the invoice recipient.\nBank fees at our expense will be charged to the invoice recipient!\nPlease credit the amount invoiced to IBAN DE29 1234 5678 9012 3456 78 | BIC GENODE51MIC (SEPA Credit Transfer)\nThis invoice is generated automatically and will not be signed\nTransaction Fee T6\n0,00 \u20ac\n130,00 \u20ac\nBasis fee for additional user accounts\n0,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\nBasic Fee wmPos\nChange of user accounts\nTransaction Fee T1\n01.02.2024 - 29.02.2024\nTransaction Fee G6\n0,00 \u20ac\n0,00 \u20ac\nVAT 19 %\n72,41 \u20ac\nTransaction Fee G3\n0,00 \u20ac\nTransaction Fee G5\n0,00 \u20ac\nTransaction Fee G1\n0,00 \u20ac\nTransaction Fee G4\nTransaction Fee G2\n0,00 \u20ac\nDate\n1. M\u00e4rz 2024\nCustomer No\n12345\nInvoice Period\n0,00 \u20ac\nTransaction Fee T5\n0,00 \u20ac\n243,00 \u20ac\n8,12 \u20ac\nTransaction Fee T2\n0,00 \u20ac\nTransaction Fee T3\nGross Amount incl. VAT\n453,53 \u20ac\nTotal\n381,12 \u20ac\nService Description\nTotal Amount\nBasic Fee wmView\nBasic Fee wmGuide\n0,00 \u20ac\nTransaction Fee T4\nRequest sections:\nT1:\nT2:\nT3:\nT4:\nT5:\nT6:\nG1:\nG2:\nG3:\nG4:\nG5:\nG6:\nAmount in Euro:\n0,58\n0,70\n1,50\n0,50\n0,80\n1,80\n0,30\n0,30\n0,40\n0,40\n0,30\n0,30\nuser-account-1\n10\n0\n99\n0\n0\n0\n0\n0\n0\n0\n0\n0\n154,30 \u20ac\nuser-account-2\n4\n0\n63\n0\n0\n0\n0\n0\n0\n0\n0\n0\n96,82 \u20ac\nTransaction Fee Seg\nT1:\nT2:\nT3:\nT4:\nT5:\nT6:\nG1:\nG2:\nG3:\nG4:\nG5:\nG6:\nQueries in Total:\n14\n0\n162\n0\n0\n0\n0\n0\n0\n0\n0\n0\nTotal in Euro:\n8,12 \u20ac\n0,00 \u20ac 243,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\n0,00 \u20ac\n251,12 \u20ac\nInvoice Details\nPeriod:        01.02.2024        to        29.02.2024\nUnit:        Musterkunde AG                                                            12345\nThe explanation of the query fee categories (T1 to T6 and G1 to G6) can be found on our website:\nhttps://www.wmaccess.com/abfragekategorien\nT1:\nT2:\nT3:\nT4:\nT5:\nT6:\n4\n0\n9\n0\n0\n0\n0\n0\n12\n0\n0\n0\n0\n0\n4\n0\n0\n0\n5\n0\n36\n0\n0\n0\n0\n0\n19\n0\n0\n0\n1\n0\n7\n0\n0\n0\n2\n0\n6\n0\n0\n0\n0\n0\n11\n0\n0\n0\n0\n0\n15\n0\n0\n0\n0\n0\n5\n0\n0\n0\n1\n0\n23\n0\n0\n0\n1\n0\n4\n0\n0\n0\n0\n0\n11\n0\n0\n0\n0,58\n0,70\n1,50\n0,50\n0,80\n1,80\n16,50 \u20ac\nKpi/22695\n10,16 \u20ac\nGS 32090\n11,08 \u20ac\n18,00 \u20ac\n28,50 \u20ac\nCRS/28432\n16,50 \u20ac\nWPN:24791\n6,58 \u20ac\nTtrb/17885\n35,08 \u20ac\nSF-M 596/99-08\n7,50 \u20ac\n22,50 \u20ac\nInvoice Details for wmView Query Reference\nPeriod:        01.02.2024        to        29.02.2024\nUnit:        Musterkunde AG                                                            12345\nwmview, wmProfile and User Profiles Query Segments:\n56,90 \u20ac\nCCL/3715\n15,82 \u20ac\n6,00 \u20ac\nAZR/31/27439\nPrice for each Query in Euro:\nQuery Reference:\n*Not specified*\nWwt/15658\nPG 7772\nCs/52113\nRjn/11138\n",
+  "metadata": {},
+  "processed_at": "2025-04-25T11:21:18.808102",
+  "pipeline_steps": [
+    {
+      "step": "preprocess",
+      "status": "success",
+      "duration": 0.0
+    },
+    {
+      "step": "ocr",
+      "status": "success",
+      "duration": 0.07312774658203125
+    },
+    {
+      "step": "classify",
+      "status": "success",
+      "duration": 0.0010619163513183594
+    },
+    {
+      "step": "extract",
+      "status": "success",
+      "duration": 0.008215904235839844
+    },
+    {
+      "step": "store",
+      "status": "success",
+      "duration": 0.013202428817749023
+    }
+  ],
+  "doc_type": "invoice",
+  "extracted_data": {
+    "invoice_number": "123100401",
+    "date": null,
+    "due_date": null,
+    "invoice_period": "0,00 \u20ac",
+    "vendor": {
+      "name": "Musterkunde AG",
+      "address": null,
+      "vat_number": "DE199378386"
+    },
+    "customer": {
+      "name": "Bank fees at our expense will be charged to the invoice recipient!",
+      "address": null,
+      "number": "12345"
+    },
+    "line_items": [],
+    "subtotal": 130.0,
+    "tax": 199378386.0,
+    "tax_rate": 19.0,
+    "total": 381.12,
+    "currency": "EUR",
+    "payment_terms": "Immediate payment without discount",
+    "payment_details": "IBAN DE29 1234 5678 9012 3456 78"
+  },
+  "storage": {
+    "id": 10,
+    "location": "documents.db",
+    "status": "stored"
+  }
+}

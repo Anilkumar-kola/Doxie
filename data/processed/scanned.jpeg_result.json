@@ -1,0 +1,65 @@
+{
+  "file_path": "data\\inbox\\scanned.jpeg",
+  "file_size": 238482,
+  "file_type": ".jpeg",
+  "content": "Bajaao Music Pvt. Ltd, Bhumy)\n\nCORPORATE ADDRESS: We\n\nHigh Tech Plaz2. 9/\u00b0UNd floor, (ra. COE XO) Kat ir\nwad tSSO\n\nMahakali caves 094: Andheri East, Mumbat=700093 (be\n\nTaxinvoice ih Au\n\n[invoice No. Invoice Date\nBajaao Music Pvt, ta, Bhumi | SIBHI-FY23-21142_ 08-Sep-2022\n| Building # D6, Gala # 4,2,3,4,Kalyan- [Order No. Portal\n\u2018Bhiwandi Naka, Mumbal - Nashik\nExpressway, Pimples\n\n\u2018Thane - 421302 Maharashtra (27) 1\nz | Ship To:\n\n| 415981\n\nWESOE 6-Stangs TewTWe!\n\n\u2018a\n\nmount Chargeabie (in words)\nINR Sixteen Thousand Seven Hundred and Forty Six Only\n\u2018Tax is payable on reverse charge basis: No\n\nFor Bajaao Music Pvt Ltd. Bhumi\n\nfe Geclare thet this invoice shows the actual price of the\ncoods described and that all particulars are true and correct. eS ST ae\n\n",
+  "metadata": {},
+  "processed_at": "2025-04-25T11:29:38.705250",
+  "pipeline_steps": [
+    {
+      "step": "preprocess",
+      "status": "success",
+      "duration": 0.0009958744049072266
+    },
+    {
+      "step": "ocr",
+      "status": "success",
+      "duration": 0.6687929630279541
+    },
+    {
+      "step": "classify",
+      "status": "success",
+      "duration": 0.0
+    },
+    {
+      "step": "extract",
+      "status": "success",
+      "duration": 0.005101203918457031
+    },
+    {
+      "step": "store",
+      "status": "success",
+      "duration": 0.0261075496673584
+    }
+  ],
+  "doc_type": "invoice",
+  "extracted_data": {
+    "invoice_number": "Invoice",
+    "date": null,
+    "due_date": null,
+    "invoice_period": null,
+    "vendor": {
+      "name": "Bajaao Music Pvt. Ltd",
+      "address": null,
+      "vat_number": null
+    },
+    "customer": {
+      "name": null,
+      "address": null,
+      "number": null
+    },
+    "line_items": [],
+    "subtotal": null,
+    "tax": 23.0,
+    "tax_rate": null,
+    "total": null,
+    "currency": "EUR",
+    "payment_terms": null,
+    "payment_details": null
+  },
+  "storage": {
+    "id": 11,
+    "location": "documents.db",
+    "status": "stored"
+  }
+}

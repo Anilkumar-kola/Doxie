@@ -1,0 +1,16 @@
+{
+  "vector_db_url": "sqlite:///documents.db",
+  "ocr_engine": "tesseract",
+  "classification_model": "transformer_classifier", 
+  "extraction_model": "llm_extractor",
+  "llm_provider": "openai",
+  "storage": {
+    "processed_dir": "data/processed",
+    "failed_dir": "data/failed"
+  },
+  "preprocessing": {
+    "image_enhancement": true,
+    "deskew": true,
+    "noise_removal": true
+  }
+}

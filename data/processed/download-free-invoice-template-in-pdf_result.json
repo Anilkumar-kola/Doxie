@@ -1,0 +1,53 @@
+{
+  "file_path": "C:\\Users\\Admin\\Documents\\ADV PDF Doxie\\data\\inbox\\download-free-invoice-template-in-pdf.png",
+  "file_size": 855257,
+  "file_type": ".png",
+  "content": "Invoice 2022435\n\nTax invoice\nBILL TO\nYour Client Issue date: 19/7/2022\n100 Harris St Due date: 3/8/2022\nSydney NSW NSW 2009\nAustralia Reference: 2022435\n\nInvoice No. Issue date Due date Total due (AUD)\n\n2022435 19/7/2022 3/8/2022 $2,510.00\nDescription Quantity Unit price ($) Amount ($)\nServices & products 1 100.00 100.00\nMore services & products 1 2,000.00 2,000.00\nSubtotal: $2,100.00\nGST 10% from $100.00 $10.00\nGST 20% from $2,000.00 $400.00\nTotal (AUD): $2,510.00\n\nIssued by, signature:\n\n\\. +61200000000 @ www. yourbusinessname.com.au A email@\n\nYour Business Name\n5 Martin Pl\n\nSydney NSW 2000\nAustralia\n\nPDF\n\n",
+  "metadata": {},
+  "processed_at": "2025-04-25T10:59:09.129874",
+  "pipeline_steps": [
+    {
+      "step": "preprocess",
+      "status": "success",
+      "duration": 0.008007049560546875
+    },
+    {
+      "step": "ocr",
+      "status": "success",
+      "duration": 2.368077039718628
+    },
+    {
+      "step": "classify",
+      "status": "success",
+      "duration": 0.001001119613647461
+    },
+    {
+      "step": "extract",
+      "status": "success",
+      "duration": 0.0010013580322265625
+    },
+    {
+      "step": "store",
+      "status": "success",
+      "duration": 0.009999752044677734
+    }
+  ],
+  "doc_type": "invoice",
+  "extracted_data": {
+    "invoice_number": "2022435",
+    "date": "19/7/2022",
+    "due_date": "3/8/2022",
+    "vendor_name": null,
+    "customer_name": null,
+    "line_items": [],
+    "subtotal": null,
+    "tax": null,
+    "total": "2022435"
+  },
+  "storage": {
+    "id": 7,
+    "location": "documents.db",
+    "status": "stored"
+  },
+  "status": "processed"
+}

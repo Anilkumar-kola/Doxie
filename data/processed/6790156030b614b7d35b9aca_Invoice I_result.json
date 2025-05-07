@@ -1,0 +1,53 @@
+{
+  "file_path": "C:\\Users\\Admin\\Documents\\ADV PDF Doxie\\data\\inbox\\6790156030b614b7d35b9aca_Invoice I.png",
+  "file_size": 80366,
+  "file_type": ".png",
+  "content": "COMPANY NAME INVOICE\n\nninscompanyname com\n\nIsSUEDTO FROM INVOICE NO.\nAlex Smith Chris Potter #0000000\nCompany Name \u2018Another Company Name Issued Date : Jan 14 2024\ninfo@companyname.com 1254 Red Street Orange City\n\n(222) 333-4444 (567) 890-11\n\nItem 3 100 4 $400\nItem 4 100 6 $600\nitem 5 100 3 $300\nTotal $1,600\n\nTax 10%\n\n\u2014\u2014\ncr Thank you\n",
+  "metadata": {},
+  "processed_at": "2025-04-25T10:59:09.128922",
+  "pipeline_steps": [
+    {
+      "step": "preprocess",
+      "status": "success",
+      "duration": 0.008004903793334961
+    },
+    {
+      "step": "ocr",
+      "status": "success",
+      "duration": 1.0574967861175537
+    },
+    {
+      "step": "classify",
+      "status": "success",
+      "duration": 0.001987457275390625
+    },
+    {
+      "step": "extract",
+      "status": "success",
+      "duration": 0.0039632320404052734
+    },
+    {
+      "step": "store",
+      "status": "success",
+      "duration": 0.016035795211791992
+    }
+  ],
+  "doc_type": "invoice",
+  "extracted_data": {
+    "invoice_number": "ninscompanyname",
+    "date": null,
+    "due_date": null,
+    "vendor_name": null,
+    "customer_name": null,
+    "line_items": [],
+    "subtotal": null,
+    "tax": null,
+    "total": null
+  },
+  "storage": {
+    "id": 6,
+    "location": "documents.db",
+    "status": "stored"
+  },
+  "status": "processed"
+}

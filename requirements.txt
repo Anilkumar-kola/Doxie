@@ -1,0 +1,56 @@
+# Core Dependencies
+fastapi==0.103.2
+uvicorn[standard]==0.23.2
+pydantic==2.4.2
+python-multipart==0.0.6
+python-dotenv==1.0.0
+aiofiles==23.2.1
+aiohttp==3.8.5
+asyncio==3.4.3
+numpy==1.24.4
+pandas==2.0.3
+pillow==10.0.1
+
+# Document Processing
+opencv-python==4.8.1.78
+PyMuPDF==1.23.3
+pytesseract==0.3.10
+python-docx==0.8.11
+pdf2image==1.16.3
+python-pptx==0.6.21
+openpyxl==3.1.2
+
+# Machine Learning & AI
+torch==2.0.1
+torchvision==0.15.2
+transformers==4.34.0
+sentence-transformers==2.2.2
+langchain==0.0.327
+protobuf==3.20.3
+safetensors==0.4.0
+einops==0.7.0
+
+# OCR & Visual Document Understanding
+# Remove these problematic packages
+# layoutparser==0.3.4
+# unstructured_inference==0.6.3
+# layoutlm-inference==0.1.1
+# donut-python==1.0.9
+
+# Vector Database
+faiss-cpu==1.7.4
+# Replace chromadb with simpler package
+# chromadb==0.4.15
+
+# Relational Database
+sqlalchemy==2.0.21
+# We'll use SQLite instead of PostgreSQL
+# psycopg2-binary==2.9.9
+alembic==1.12.0
+
+# Monitoring & Logging
+python-json-logger==2.0.7
+
+# Development
+pytest==7.4.2
+pytest-asyncio==0.21.1

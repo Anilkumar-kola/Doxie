@@ -1,0 +1,48 @@
+2025-04-25 10:59:09,091 - **ocr_engine** - INFO - Tesseract OCR engine initialized
+2025-04-25 10:59:09,096 - **vector_store** - INFO - Initialized SQLite database at documents.db
+2025-04-25 10:59:09,097 - **batch_processor** - INFO - Found 5 files to process
+2025-04-25 10:59:09,125 - **batch_processor** - INFO - Processing file: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\6790156030b614b7d35b9aca_Invoice I.png
+2025-04-25 10:59:09,127 - **batch_processor** - INFO - Processing file: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\download-free-invoice-template-in-pdf.png
+2025-04-25 10:59:09,127 - **batch_processor** - INFO - Processing file: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\RFP_for_Robotic_Process_Automation_2.pdf
+2025-04-25 10:59:09,128 - **processor** - INFO - Preprocessing document: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\6790156030b614b7d35b9aca_Invoice I.png
+2025-04-25 10:59:09,129 - **batch_processor** - INFO - Processing file: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\sample-invoice.pdf
+2025-04-25 10:59:09,129 - **processor** - INFO - Preprocessing document: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\download-free-invoice-template-in-pdf.png
+2025-04-25 10:59:09,130 - **batch_processor** - INFO - Processing file: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\your_invoice.pdf
+2025-04-25 10:59:09,131 - **processor** - INFO - Preprocessing document: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\RFP_for_Robotic_Process_Automation_2.pdf
+2025-04-25 10:59:09,132 - **processor** - INFO - Image preprocessing complete
+2025-04-25 10:59:09,133 - **processor** - INFO - Preprocessing document: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\sample-invoice.pdf
+2025-04-25 10:59:09,134 - **processor** - INFO - Image preprocessing complete
+2025-04-25 10:59:09,135 - **processor** - INFO - Preprocessing document: C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\your_invoice.pdf
+2025-04-25 10:59:09,135 - **processor** - INFO - PDF preprocessing complete
+2025-04-25 10:59:09,136 - **ocr_engine** - INFO - Extracting text with OCR from C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\6790156030b614b7d35b9aca_Invoice I.png
+2025-04-25 10:59:09,136 - **processor** - INFO - PDF preprocessing complete
+2025-04-25 10:59:09,137 - **ocr_engine** - INFO - Extracting text with OCR from C:\Users\Admin\Documents\ADV PDF Doxie\data\inbox\download-free-invoice-template-in-pdf.png
+2025-04-25 10:59:09,137 - **processor** - INFO - PDF preprocessing complete
+2025-04-25 10:59:09,404 - **ocr_engine** - INFO - Document already has text content or doesn't need OCR
+2025-04-25 10:59:09,435 - **classifier** - INFO - Classified document as: pdf_document
+2025-04-25 10:59:09,452 - **extractor** - WARNING - No text content to extract from
+2025-04-25 10:59:09,471 - **ocr_engine** - INFO - Document already has text content or doesn't need OCR
+2025-04-25 10:59:09,499 - **classifier** - INFO - Classified document as: pdf_document
+2025-04-25 10:59:09,562 - **extractor** - WARNING - No text content to extract from
+2025-04-25 10:59:09,606 - **vector_store** - INFO - Document stored with ID 3
+2025-04-25 10:59:09,656 - **ocr_engine** - INFO - Document already has text content or doesn't need OCR
+2025-04-25 10:59:09,657 - **vector_store** - INFO - Document stored with ID 4
+2025-04-25 10:59:09,657 - **classifier** - INFO - Classified document as: pdf_document
+2025-04-25 10:59:09,659 - **extractor** - WARNING - No text content to extract from
+2025-04-25 10:59:09,659 - **batch_processor** - INFO - Saved result to data\processed\sample-invoice_result.json
+2025-04-25 10:59:09,660 - **batch_processor** - INFO - Saved result to data\processed\your_invoice_result.json
+2025-04-25 10:59:09,671 - **vector_store** - INFO - Document stored with ID 5
+2025-04-25 10:59:09,674 - **batch_processor** - INFO - Saved result to data\processed\RFP_for_Robotic_Process_Automation_2_result.json
+2025-04-25 10:59:10,194 - **ocr_engine** - INFO - Extracted 335 characters of text
+2025-04-25 10:59:10,195 - **classifier** - INFO - Classified document as: invoice
+2025-04-25 10:59:10,196 - **extractor** - INFO - Extracting data from invoice document
+2025-04-25 10:59:10,199 - **extractor** - INFO - Extracted invoice data: {'invoice_number': 'ninscompanyname', 'date': None, 'due_date': None, 'vendor_name': None, 'customer_name': None, 'line_items': [], 'subtotal': None, 'tax': None, 'total': None}
+2025-04-25 10:59:10,215 - **vector_store** - INFO - Document stored with ID 6
+2025-04-25 10:59:10,217 - **batch_processor** - INFO - Saved result to data\processed\6790156030b614b7d35b9aca_Invoice I_result.json
+2025-04-25 10:59:11,505 - **ocr_engine** - INFO - Extracted 615 characters of text
+2025-04-25 10:59:11,505 - **classifier** - INFO - Classified document as: invoice
+2025-04-25 10:59:11,506 - **extractor** - INFO - Extracting data from invoice document
+2025-04-25 10:59:11,506 - **extractor** - INFO - Extracted invoice data: {'invoice_number': '2022435', 'date': '19/7/2022', 'due_date': '3/8/2022', 'vendor_name': None, 'customer_name': None, 'line_items': [], 'subtotal': None, 'tax': None, 'total': '2022435'}
+2025-04-25 10:59:11,517 - **vector_store** - INFO - Document stored with ID 7
+2025-04-25 10:59:11,519 - **batch_processor** - INFO - Saved result to data\processed\download-free-invoice-template-in-pdf_result.json
+2025-04-25 10:59:11,521 - **batch_processor** - INFO - Processed 5 files: 5 successful, 0 failed

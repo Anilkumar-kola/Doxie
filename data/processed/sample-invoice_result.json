@@ -1,0 +1,43 @@
+{
+  "file_path": "C:\\Users\\Admin\\Documents\\ADV PDF Doxie\\data\\inbox\\sample-invoice.pdf",
+  "file_size": 381709,
+  "file_type": ".pdf",
+  "content": null,
+  "metadata": {},
+  "processed_at": "2025-04-25T10:59:09.133922",
+  "pipeline_steps": [
+    {
+      "step": "preprocess",
+      "status": "success",
+      "duration": 0.005983591079711914
+    },
+    {
+      "step": "ocr",
+      "status": "success",
+      "duration": 0.2954123020172119
+    },
+    {
+      "step": "classify",
+      "status": "success",
+      "duration": 0.017004013061523438
+    },
+    {
+      "step": "extract",
+      "status": "success",
+      "duration": 0.03699803352355957
+    },
+    {
+      "step": "store",
+      "status": "success",
+      "duration": 0.16864752769470215
+    }
+  ],
+  "doc_type": "pdf_document",
+  "extracted_data": {},
+  "storage": {
+    "id": 3,
+    "location": "documents.db",
+    "status": "stored"
+  },
+  "status": "processed"
+}

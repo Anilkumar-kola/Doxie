@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Document System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .document-list { margin-top: 20px; }
+        .document-item { 
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Document System</h1>
+    <a href="/upload">Upload New Document</a>
+    
+    <div class="document-list">
+        <h2>All Documents</h2>
+        {% if documents %}
+            {% for doc in documents %}
+                <div class="document-item">
+                    <h3>{{ doc.filename }}</h3>
+                    <p>Type: {{ doc.doc_type }}</p>
+                    <p>Size: {{ doc.file_size }} bytes</p>
+                    <p>Processed at: {{ doc.processed_at }}</p>
+                    <a href="/document/{{ doc.id }}">View Document</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No documents found. Please upload some documents.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

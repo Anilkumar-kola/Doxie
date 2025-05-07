@@ -1,0 +1,146 @@
+# deployment/docker/docker-compose.yml
+version: '3.8'
+
+services:
+  # API Service
+  api:
+    build:
+      context: ../../
+      dockerfile: deployment/docker/Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - document_storage:/app/data
+    environment:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    depends_on:
+      - vectordb
+      - postgres
+      - redis
+    restart: always
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
+
+  # Frontend UI
+  ui:
+    build:
+      context: ../../
+      dockerfile: deployment/docker/Dockerfile.ui
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    restart: always
+
+  # Document Collection Worker
+  collector:
+    build:
+      context: ../../
+      dockerfile: deployment/docker/Dockerfile.worker
+    command: ["python", "-m", "workers.collector_worker"]
+    volumes:
+      - document_storage:/app/data
+    environment:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    depends_on:
+      - redis
+      - vectordb
+    restart: always
+
+  # Document Processing Worker
+  processor:
+    build:
+      context: ../../
+      dockerfile: deployment/docker/Dockerfile.worker
+    command: ["python", "-m", "workers.processor_worker"]
+    volumes:
+      - document_storage:/app/data
+    environment:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    depends_on:
+      - redis
+      - vectordb
+    restart: always
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+
+  # Redis for Task Queue
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: always
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../../deployment/docker/initdb:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    restart: always
+
+  # Vector Database (ChromaDB)
+  vectordb:
+    image: ghcr.io/chroma-core/chroma:latest
+    volumes:
+      - vectordb_data:/chroma/chroma
+    environment:
+      - CHROMA_DB_IMPL=duckdb+parquet
+      - CHROMA_PERSIST_DIRECTORY=/chroma/chroma
+    ports:
+      - "8001:8000"
+    restart: always
+
+  # Monitoring
+  prometheus:
+    image: prom/prometheus:v2.41.0
+    volumes:
+      - ../../deployment/docker/prometheus:/etc/prometheus
+      - prometheus_data:/prometheus
+    command: ["--config.file=/etc/prometheus/prometheus.yml"]
+    ports:
+      - "9090:9090"
+    restart: always
+
+  grafana:
+    image: grafana/grafana:9.3.2
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../../deployment/docker/grafana/provisioning:/etc/grafana/provisioning
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+    depends_on:
+      - prometheus
+    restart: always
+
+volumes:
+  document_storage:
+  redis_data:
+  postgres_data:
+  vectordb_data:
+  prometheus_data:
+  grafana_data:

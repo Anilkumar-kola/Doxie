@@ -1,0 +1,43 @@
+{
+  "file_path": "C:\\Users\\Admin\\Documents\\ADV PDF Doxie\\data\\inbox\\RFP_for_Robotic_Process_Automation_2.pdf",
+  "file_size": 730145,
+  "file_type": ".pdf",
+  "content": null,
+  "metadata": {},
+  "processed_at": "2025-04-25T10:59:09.131923",
+  "pipeline_steps": [
+    {
+      "step": "preprocess",
+      "status": "success",
+      "duration": 0.006955385208129883
+    },
+    {
+      "step": "ocr",
+      "status": "success",
+      "duration": 0.5190885066986084
+    },
+    {
+      "step": "classify",
+      "status": "success",
+      "duration": 0.0009999275207519531
+    },
+    {
+      "step": "extract",
+      "status": "success",
+      "duration": 0.001001119613647461
+    },
+    {
+      "step": "store",
+      "status": "success",
+      "duration": 0.012998342514038086
+    }
+  ],
+  "doc_type": "pdf_document",
+  "extracted_data": {},
+  "storage": {
+    "id": 5,
+    "location": "documents.db",
+    "status": "stored"
+  },
+  "status": "processed"
+}

@@ -1,0 +1,19 @@
+<!-- static/logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <style>
+    .document { fill: #4e73df; }
+    .text { fill: white; }
+    .highlight { fill: #1cc88a; }
+  </style>
+  <rect width="120" height="120" rx="20" fill="#4e73df" />
+  <path d="M85,30H55c-2.2,0-4,1.8-4,4v10H35c-2.2,0-4,1.8-4,4v38c0,2.2,1.8,4,4,4h30c2.2,0,4-1.8,4-4V76h16c2.2,0,4-1.8,4-4V34
+    C89,31.8,87.2,30,85,30z" fill="white" />
+  <path d="M55,34h26v34H65v14H39V48h16V34z" class="document" />
+  <path d="M55,34v10H39v4h20V34H55z" class="highlight" />
+  <rect x="45" y="55" width="14" height="3" rx="1" class="text" />
+  <rect x="45" y="62" width="14" height="3" rx="1" class="text" />
+  <rect x="45" y="69" width="14" height="3" rx="1" class="text" />
+  <rect x="70" y="45" width="14" height="3" rx="1" class="text" />
+  <rect x="70" y="52" width="14" height="3" rx="1" class="text" />
+  <rect x="70" y="59" width="14" height="3" rx="1" class="text" />
+</svg>

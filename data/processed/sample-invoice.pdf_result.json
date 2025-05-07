@@ -1,0 +1,60 @@
+{
+  "file_path": "data\\inbox\\sample-invoice.pdf",
+  "file_size": 381709,
+  "file_type": ".pdf",
+  "content": "Mock content for sample-invoice.pdf",
+  "metadata": {},
+  "processed_at": "2025-04-25T14:19:29.263018",
+  "pipeline_steps": [
+    {
+      "step": "preprocess",
+      "status": "success",
+      "duration": 0.0
+    },
+    {
+      "step": "ocr",
+      "status": "success",
+      "duration": 0.001001596450805664
+    },
+    {
+      "step": "classify",
+      "status": "success",
+      "duration": 0.0
+    },
+    {
+      "step": "extract",
+      "status": "success",
+      "duration": 0.0
+    },
+    {
+      "step": "store",
+      "status": "success",
+      "duration": 0.019998788833618164
+    },
+    {
+      "step": "index",
+      "status": "success",
+      "duration": 0.009997367858886719
+    }
+  ],
+  "doc_type": "invoice",
+  "extracted_data": {
+    "invoice_number": "INV-20250425",
+    "date": "2025-04-25",
+    "due_date": "2025-05-25",
+    "total": "123.45",
+    "vendor": {
+      "name": "Sample Vendor",
+      "address": "123 Vendor St, Vendor City"
+    },
+    "customer": {
+      "name": "Sample Customer",
+      "address": "456 Customer Ave, Customer Town"
+    }
+  },
+  "storage": {
+    "id": 3,
+    "location": "documents.db",
+    "status": "stored"
+  }
+}
